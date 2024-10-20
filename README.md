@@ -17,8 +17,7 @@ A simple User Profile Management System implemented using Django and Django REST
 ## Installation
 Follow these steps to set up the project on your local machine:<br>
 <b>1.Clone the Repository:</b> <br>
-git clone https://github.com/your-username/user-profile-management.git <br>
-cd user-profile-management<br>
+git clone https://github.com/tushar75083/UserProfileManagementSystem.git <br>
 
 <b>2.Set Up a Virtual Environment:</b> <br>
 python -m venv venv <br>
