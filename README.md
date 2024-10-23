@@ -1,10 +1,11 @@
 # User Profile Management System
-A simple User Profile Management System implemented using Django and Django REST Framework. This project provides basic CRUD (Create, Read, Update, Delete) operations for managing user profiles through a RESTful API.
+A simple User Profile Management System implemented using Django and Django REST Framework. This project provides basic CRUD (Create, Read, Update, Delete) operations for managing user profiles through a RESTful API.In this project also added <b>Basic Authentication</b> to secure the apis..
 
 ## Features
 <b>CRUD Operations:</b> Create, retrieve, update, and delete user profiles using Django REST Framework.<br>
 <b>Function-Based Views:</b> Uses function-based views to handle HTTP requests.<br>
 <b>ModelSerializer:</b> Serializes the UserProfile model for converting model instances to and from JSON.<br>
+<b>Basic Authentication:</b> Added Basic Authentication and Permission Classes to secure the APIs.<br>
 <b>API View Decorators:</b> Uses @api_view decorators to define the supported HTTP methods for each endpoint.<br>
 <b>JSON Response:</b> All responses are in JSON format, making it suitable for integration with frontend frameworks or mobile applications.<br>
 
