@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view,authentication_classes,permission_classes
 from rest_framework.response import Response
 from rest_framework import status
 from .models import UserProfile
 from .serializers import UserProfileSerializer
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 
 
 # Create your views here.
@@ -11,6 +13,8 @@ from .serializers import UserProfileSerializer
 # Get All List and Create View
 # /api/profiles/
 @api_view(['GET','POST'])
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
 def user_profile_list(request):
     if request.method == "GET":
         # retrive all records
